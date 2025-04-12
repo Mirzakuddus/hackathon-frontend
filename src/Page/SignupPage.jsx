@@ -35,7 +35,7 @@ const SignupPage = () => {
   const handleSubmit =(e)=>{
          e.preventDefault();
        const {fullname, email, password} = formData;
-       axios.post('http://localhost:3000/users/register',{
+       axios.post('https://hackathon-backend-5.onrender.com/users/register',{
         fullname,email,password
        }).then((res)=>{
         console.log("user register successfully");

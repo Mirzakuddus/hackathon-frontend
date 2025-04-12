@@ -23,7 +23,7 @@ console.log(projects)
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        await axios.get('http://localhost:3000/project/get-projects', {
+        await axios.get('https://hackathon-backend-5.onrender.com/project/get-projects', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         }).then((res)=>{
           console.log('Fetched Projects:', res.data);

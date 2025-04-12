@@ -50,7 +50,7 @@ const ProjectInputPage = () => {
 
   const handleSubmit = async () => {
     try {
-       await axios.post('http://localhost:3000/project/add-project', formData,{
+       await axios.post('https://hackathon-backend-5.onrender.com/project/add-project', formData,{
         headers:  { Authorization: `Bearer ${localStorage.getItem('token')}` },
        }).then((res)=>{
         console.log('Saved:', res.data);
